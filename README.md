@@ -7,6 +7,7 @@ python3 pyqt5_weather.py
 
 
 要求安装pyqt5: 
+              
               python3 -m pip install pyqt5
               python3 -m pip install pyqt5-tools
 

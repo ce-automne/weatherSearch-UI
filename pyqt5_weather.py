@@ -5,13 +5,12 @@ Created on 2017年7月26日
 '''
 # -*- encoding=utf-8 -*-
 
-# import ui_weather #复制到workspace目录下，重启Eclipse生效
+
 from PyQt5.Qt import QMainWindow
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtWidgets import qApp, QAction, QMessageBox
 from PyQt5.QtGui import QIcon
 import requests
-# import urllib
 from bs4 import BeautifulSoup
 import sys
 
@@ -25,7 +24,6 @@ class WeatherSearch(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
         super(WeatherSearch, self).__init__(parent)
 
-        # self.citylist = {'合肥': '101220101','西安 ': '101110101'}
         self.citylist = {'北京': '101010100', '青岛': '101120201', '西安': '101110101', '合肥': '101220101', '肥西': '101220104',
                          '海淀': '101010200', '朝阳': '101071201', '顺义': '101010400', '怀柔': '101010500', '通州': '101190509',
                          '昌平': '101010700', '延庆': '101010800', '丰台': '101010900', '石景山': '101011000', '大兴': '101011100',
